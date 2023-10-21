@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./main.css" />
+
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario HTML</h1>
+        <h2>Campos A e B - leia a observação abaixo</h2>
+        <h4>Obs: numero do campo B tem que ser maior do que o do campo A</h4>
+        <form id="form-enviar">
+            <input type="number" id="campo-A" required placeholder="campo A" />
+            <input type="number" id="campo-B" required placeholder="campo B" />
+            <p class="error-message">
+                O número precisa ser maior que do campo A.
+            </p>
+            <button id="btn-enviar" type="submit">Enviar</button>
+        </form>
+        <p class="sucess-message"></p>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
